@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binarytradeoption</title>
+    <link rel="icon" href="../images/binaryTlogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <img id="web-logo" class="logo" src="../images/binaryTlogowhite.svg" alt="logo">
+           
+            <img id="mobile-cta" class="mobile-menu" src="../images/menu-btn.svg" alt="Open Nav">
+        </div>
+        <div class="nav">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit-btn.svg" alt="Close Nav">
+
+            <ul class="primary-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+
+    
+    <section class="footer">
+        <div class="foot-1">
+            <img src="../images/QR-code.jpg" alt="">
+
+            <style>
+                section img{
+                    height: 20em;
+                    object-position: center;
+                }
+            </style>
+
+                <ul>
+                    <li class="ft-head" style="color: white; text-decoration: none;">Scan this code to start a WhatsApp chat with Binarytradeoption.</li>
+                    
+                    <div class="div">
+                        <ul>
+                            <li class="log-in">
+                                <a href="../html/Home-page.html" style="color: white; text-decoration: none;">Back</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+        </div>
+        <div class="container">
+            
+        </div>
+            <div class="foot-5">
+                <p>2023 Copyright. All Rights Reserved.</p>
+            </div>
+    </section>
+
+<script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () =>{
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () =>{
+        nav.classList.remove('menu-btn');
+    })
+</script>
+
+</body>
+</html>
