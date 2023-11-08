@@ -17,21 +17,22 @@ body ul {
 body {
   overflow-x: hidden;
   background-color: var(--main-color);
-  font-weight: lighter;
+  font-weight: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .navbar {
   background: linear-gradient(rgb(1, 10, 26),#151d26ff);
-  padding: 0;
+  padding: 0.5em;
   height: 2em;
 }
 
 .navbar .logo {
-  width: 3em;
-  height: 1em;
-  padding: .5em 1em;
+  width: 4em;
+  height: 2em;
+  padding:0em 1em;
 }
 
 .navbar .mobile-menu {
@@ -48,15 +49,23 @@ body {
   place-content: space-between;
 }
 
+.navbar .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: inline-block;
+  /*place-content: space-betwee;*/
+}
+
 .navbar nav {
   display: none;
 }
 
 .navbar nav ul li span{
-  color: var(--main-color2);
+  color: black;
+  background-color: white;
   font-weight: bold;
   font-size: 1.4em;
-  padding: 0 1em;
+  padding: 0 1.5em;
   margin-right: .4em;
   
 }
@@ -77,10 +86,10 @@ body {
   -webkit-transition: 2s;
   transition: 2s;
   color: white;
-  margin-bottom: .1em;
+  margin-bottom: 1em;
   margin-top: 0;
-  font-size: 2em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2.5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: bold;
 }
 
@@ -91,13 +100,42 @@ body {
   -webkit-text-stroke: 1px white;
 }
 
-.hero p {
-  color: gray;
+.hero .btn{
+  padding-right: 0em;
+  background-color: black;
+  color: white;
 }
 
-.hero img {
-  width: 6em;
+.hero .btn:hover{
+  background-color: #00ff00ff;
+  padding-left: .6em;
+  /* padding-right: 0em; */
 }
+
+.hero .wht{
+  padding-left: .3em;
+  padding-right: .6em;
+}
+
+/* .hero .wht:hover{
+  padding-left: 0em;
+} */
+
+
+/*.hero a {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: .3em 1.5em;
+  font-weight: 700;
+  border-radius: 5em;
+}
+
+.hero a:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(134, 134, 134, 0.199);
+  transition: 1s;
+}*/
+
 
 section {
   position: relative;
@@ -158,13 +196,72 @@ section {
 .section-2 {
   background-color: var(--green);
   color: white;
-  padding: 2em 0;
+  padding: 2em 3%;
   -webkit-transition: 2s;
   transition: 2s;
 }
 
 .section-2 h1{
   text-align: center;
+}
+
+.section-2 .container1 {
+  margin: 0;
+  padding: .5em 0;
+  text-align: left;
+}
+
+.section-2 .container1 ul{
+  padding: 0em 5px;
+}
+
+.section-2 .container1 li {
+  text-align: left;
+  padding: 1em .5em ;
+  width: 22em;
+  height: fit-content;
+  margin: 0;
+  border-radius: 1em;
+  
+}
+
+.section-2 .container1 li:hover {
+  background-color: rgba(1, 21, 48, 0.027);
+  border-left: 3px solid rgba(0, 0, 0, 0.315);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.164);
+  transition: 1s;
+}
+
+.section-2 .container1 li blockquote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.section-2 .container1 li .img1 {
+  width: 3em;
+  height: 3em;
+  /*border: 1px solid rgba(255, 255, 255, 0.192);
+  border-radius: 50%;*/
+  margin-bottom: -2em;
+  margin-left: 10em;
+  /*background-color: rgb(1, 24, 54);*/
+}
+
+.section-2 .img2{
+  height: 30em;
+  margin-left: 0em;
+}
+
+.section-2 .container1 li h3 {
+  margin-top: -.5em;
+  margin-left: .1em;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+.section-2 .container1 li cite {
+  margin-right: -60%;
+  color: #d1cfcf;
 }
 
 .section-2 .container {
@@ -177,7 +274,18 @@ section {
 }
 
 .section-2 .container li {
-  background-color: rgb(1, 21, 48);
+  background-color: rgba(1, 21, 48, 0.5);
+  text-align: center;
+  padding: .1em .1em;
+  width: 80%;
+  height: fit-content;
+  margin: 0 auto 3em auto;
+  border-radius: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.section-2 .container li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: .1em .1em;
   width: 80%;
@@ -185,6 +293,7 @@ section {
   margin: 0 auto 3em auto;
   border-radius: 1em;
   border: 1px solid rgba(255, 255, 255, 0.192);
+  transition: 1s;
 }
 
 .section-2 .container li img {
@@ -194,7 +303,7 @@ section {
   border-radius: 50%;
   margin-top: -1%;
   margin-left: -90%;
-  background-color: rgb(1, 21, 48);
+  background-color: rgb(1, 24, 54);
 }
 
 .section-2 .container li h3 {
@@ -407,11 +516,11 @@ nav.menu-btn {
   display: block;
   padding: .5em 0;
   font-size: 1.2em;
-  text-align: right;
+  text-align: left;
 }
 
 .navbar nav ul li a:hover {
-  font-weight: bold;
+  border-bottom: solid 1px white;
 }
 
 .mobile-menu-exit {
@@ -536,3 +645,90 @@ nav.menu-btn {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+
+
+
+
+/*button*/
+.btn {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: .3em 1.5em;
+  font-weight: 700;
+  border-radius: 5em;
+}
+
+.btn {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: .3em 1.5em;
+  font-weight: 700;
+  border-radius: 5em;
+}
+
+.btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(151, 151, 151, 0.301);
+  transition: 1s;
+}
+
+/*dropdown*/
+.dropdown-content{
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  margin: 0;
+}
+
+.dropdown li:hover, .dropdown:hover .dropbtn{
+  background-color: rgb(54, 54, 54);
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content li:hover{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/*icons*/
+
+.wht {
+  height: 1em;
+  width: 1em;
+}
