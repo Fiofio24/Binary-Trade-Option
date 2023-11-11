@@ -31,7 +31,7 @@ body {
 
 .navbar .logo {
   width: 4em;
-  height: 2em;
+  height: 1.8em;
   padding:0em 1em;
 }
 
@@ -62,10 +62,10 @@ body {
 
 .navbar nav ul li span{
   color: black;
-  background-color: white;
+  background: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.562),rgb(255, 255, 255));
   font-weight: bold;
   font-size: 1.4em;
-  padding: 0 1.5em;
+  padding: 0 1.5em 10px 1.5em;
   margin-right: .4em;
   
 }
@@ -289,7 +289,7 @@ section {
   text-align: center;
   padding: .1em .1em;
   width: 80%;
-  height: 8em;
+  height: fit-content;
   margin: 0 auto 3em auto;
   border-radius: 1em;
   border: 1px solid rgba(255, 255, 255, 0.192);
@@ -366,7 +366,7 @@ section {
   -webkit-transition: 2s;
   transition: 2s;
   color: var(--main-color2);
-  -webkit-text-stroke: 1px white;
+  /* -webkit-text-stroke: 1px white; */
 }
 
 .section-3 .container li a {

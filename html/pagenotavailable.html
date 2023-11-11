@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binarytradeoption</title>
+    <link rel="icon" href="../images/binaryTlogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body >
+    <div class="navbar">
+        <div class="container">
+            <img id="web-logo" class="logo" src="../images/binaryTlogowhite.svg" alt="logo">
+           
+            <img id="mobile-cta" class="mobile-menu" src="../images/menu-btn.svg" alt="Open Nav">
+        </div>
+        <div class="nav">
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="../images/exit-btn.svg" alt="Close Nav">
+
+            <ul class="primary-nav">
+                <li><span>Home</span></li>
+                <li><a style="color: rgba(255, 255, 255, 0.322);" href="#">About</a></li>
+                <li><a style="color: rgba(255, 255, 255, 0.322);" href="#">Service</a></li>
+                    <div class="dropdown">
+                        <li class="dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a style="color: rgba(255, 255, 255, 0.322); padding-right: 5em;" href="#">Contact</a>
+                          <i class="fa fa-caret-down"></i>
+                        </li>
+                        <div class="dropdown-content">
+                              <li><a style="color: black; padding: 0; border: 0;" href="#">+7 995 091-60-55</a></li>
+                              <!-- <label for="phone">+7 995 091-60-55</label>
+                            <input type="tel" id="phone" name="phone" pattern=" [0-9]{3}-[0-9]{2}-[0-9]{3}"> -->
+
+                          <li>Dropdown item</li>
+                          <li>Dropdown item</li>
+                        </div>
+                    </div>
+
+            </ul>
+        </nav>
+        </div>
+    </div>
+
+
+    
+    <section class="footer">
+        <div class="foot-1">
+
+
+            <p class="p">page not available</p>
+            <a class="btn" href="../index.html">back to Home</a>
+            <!-- <img src="../images/QR-code.jpg" alt=""-->
+
+            <style>
+
+                .p{
+                    margin: 10em auto 2em auto;
+                    color: red;
+                }
+
+                .navbar {
+                    background: linear-gradient(rgb(24, 0, 0),rgb(48, 24, 24));
+                    padding: 0.5em;
+                    height: 2em;
+                }
+
+                .footer .foot-1 {
+                    text-align: center;
+                    padding: 1em;
+                    background-image: linear-gradient(rgb(24, 0, 0),rgba(36, 1, 1, 0.651)),url(../images/map-bg.svg);
+                    -webkit-transition: 2s;
+                    transition: 2s;
+                    position: relative;
+                    background-position-x: center;
+                    background-position-y: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: 30em;
+                }
+
+                .footer {
+                    background-color: rgb(22, 0, 0);
+                    margin: 0;
+                }
+            
+                /* section img{
+                    height: 20em;
+                    object-position: center;
+                } */
+            </style>
+
+                <!--ul>
+                    <li class="ft-head" style="color: white; text-decoration: none;">Scan this code to start a WhatsApp chat with Binarytradeoption.</li>
+                    
+                    <div class="div">
+                        <ul>
+                            <li class="log-in">
+                                <a class="btn" href="../index.html" style="text-decoration: none;">Back</a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul> -->
+        </div>
+        <div class="container">
+            
+        </div>
+            <div class="foot-5">
+                <p>2023 Copyright. All Rights Reserved.</p>
+            </div>6
+    </section>
+
+<script>
+
+    const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+    mobileBtn.addEventListener('click', () =>{
+        nav.classList.add('menu-btn');
+    })
+
+    mobileBtnExit.addEventListener('click', () =>{
+        nav.classList.remove('menu-btn');
+    })
+</script>
+
+</body>
+</html>
