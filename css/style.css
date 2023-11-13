@@ -594,6 +594,7 @@ nav.menu-btn {
   .section-12 {
     color: white;
     height: 30em;
+    text-align: left;
   }
   .section-12 .sect-1-list {
     margin: 4em auto;
@@ -606,7 +607,7 @@ nav.menu-btn {
   }
   .section-12 .sect-1-list li:before {
     content: '';
-    left: -2em;
+    left: -3em;
     position: absolute;
     width: 22px;
     height: 20px;

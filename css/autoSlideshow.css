@@ -1,0 +1,65 @@
+
+
+.slider-frame
+{
+    overflow: hidden;
+    height: fit-content;
+    width: 500px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: 2s;
+}
+.slider-frame1
+{
+    overflow: hidden;
+    height: fit-content;
+    width: 700px;
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    transition: 2s;
+}
+.slider-frame:hover
+{
+    box-shadow: 0 0 20px 0px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+@-webkit-keyframes slide_animation 
+{
+    0% {left:0px;}
+    10% {left:0px;}
+    20% {left:0px;}
+    30% {left:500px;}
+    40% {left:500px;}
+    50% {left:1000px;}
+    60% {left:1000px;}
+    70% {left:1500px;}
+    80% {left:1500px;}
+    90% {left:2000px;}
+    100% {left:2000px;}    
+}
+
+.slide-images
+{
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 0 -2800px;
+    position:relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    float: left;
+}
+.img-container img{
+    height: 200px;
+    width: 500px;
+}
